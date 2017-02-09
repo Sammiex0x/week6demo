@@ -2,22 +2,44 @@
 <html>
     <head>
         <title>week 6 demo for class</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
         <link rel="stylesheet" type="text/css" href="week6.css">
         <link rel="stylesheet" type="text/css" href="week6extra.css">
         <script src="week6.js"></script>
     </head>
     <body>
-        <h1>this is my new page</h1>
+        <div class="jumbotron"
+            <h1 id="firstHead">this is my new page</h1>
+        </div>
         <div class="firstText">
             <p id="para1">Here is <span id="someID">some</span> more text</p>
-            <button id="btn1">hi</button>
-            <button id="btn2">goodbye</button>
+            <button id="btn1" onclick="changeHead2()">hi</button>
+            <button id="btn2" class="btn btn-danger">goodbye</button>
         </div>
         <h2 id="head2">here's a second heading</h2>
         <h3>here's a third heading</h3>
-        <button>hello</button>
-        <img src="giraffe_thumb.JPG" id="giraffe" alt="a big giraffe"></img>
-        <a href="http://google.com">go to google</a>
-        <input id="myinput"/>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-lg-4"><button onclick="addInputs()">hello</button></div>
+                <div class="col-md-6 col-lg-8">
+                    <img src="giraffe_thumb.JPG" id="giraffe" alt="a big giraffe"></img>
+                    <a href="http://google.com">go to google</a>
+                    <input id="myinput"/>
+
+                </div>
+            </div>
+                                <p id="Total">0</p>
+        </div>
     </body>
 </html>
