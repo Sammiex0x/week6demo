@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            function Order() {
+            
+            var myString = document.getElementById("order").value;
+                var Order = myString.split(",");
+            console.log(Order);
+            for (var i=0; i<Order.length; i++) {
+                    Order[i] = Order[i].trim();
+
+                    console.log(Order[i]);
+                }
+            }
+        </script>
+        <h1>parsing text</h1>
+
+        <ul>
+            <li>Coke</li>
+            <li>Pepsi</li>
+            <li>Sprite</li>
+            <li>Rootbeer</li>
+        </ul>
+        Type your drinks in the text box below with commas between each one. <br/>  
+        <input id="order"/>
+            
+        <button onclick="Order()">
+        Process Order
+        </button>
+        
+	</body>
+</html>
